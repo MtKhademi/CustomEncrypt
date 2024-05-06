@@ -2,7 +2,7 @@ using FluentAssertions;
 
 namespace CustomEncrypt.Test
 {
-    public class UnitTest1
+    public class CalcuTest
     {
 
         [Theory]
