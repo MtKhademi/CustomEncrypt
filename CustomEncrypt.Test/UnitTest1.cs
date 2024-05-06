@@ -5,18 +5,20 @@ namespace CustomEncrypt.Test
     public class UnitTest1
     {
 
-        [Fact]
-        public void NAME() 
+        [Theory]
+        [InlineData(1, 2, 3)]
+        [InlineData(int.MaxValue, 2, 3)]
+        public void Test_Add(int x, int y, int expect)
         {
 
             //-- Arrange
             var cl = new Calcu();
 
             //-- Act
-            var result = cl.Add(1, 2);
+            var result = cl.Add(x, y);
 
             //-- Assertion
-            result.Should().Be(2);
+            result.Should().Be(expect);
         }
 
     }
